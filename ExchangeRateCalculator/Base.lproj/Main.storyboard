@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExchangeRateCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kz9-vE-jEJ">
+                                <rect key="frame" x="135" y="164" width="165" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="EwD-DK-ifp"/>
+                                    <constraint firstAttribute="height" constant="60" id="YnF-qp-jwV"/>
+                                    <constraint firstAttribute="width" constant="165" id="t7a-H4-PlH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="wd9-Fd-7hH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsl-Q3-Sg0">
+                                <rect key="frame" x="135" y="299" width="165" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4WS-zV-BJX"/>
+                                    <constraint firstAttribute="width" constant="165" id="mtt-Bp-xeB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="대한민국(원)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZb-cd-5NG">
+                                <rect key="frame" x="135" y="124" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="037-cI-K2F"/>
+                                    <constraint firstAttribute="height" constant="40" id="LWx-yD-Tw8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="dkD-Qz-L6g"/>
+                                    <constraint firstAttribute="width" constant="90" id="gox-GY-qkX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미국(달러)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBS-iu-6x8">
+                                <rect key="frame" x="135" y="259" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="crE-mL-hSl"/>
+                                    <constraint firstAttribute="height" constant="40" id="l80-uB-xpq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRU-5s-OY4">
+                                <rect key="frame" x="135" y="434" width="165" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="M3t-Ky-BBi"/>
+                                    <constraint firstAttribute="width" constant="165" id="b7x-fV-BMr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유럽(유로)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-ja-2fw">
+                                <rect key="frame" x="135" y="394" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gBn-8W-fVJ"/>
+                                    <constraint firstAttribute="width" constant="90" id="sJ1-3C-q8R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOa-Z2-g29">
+                                <rect key="frame" x="135" y="565" width="165" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="SfQ-qj-wFf"/>
+                                    <constraint firstAttribute="height" constant="60" id="lHB-ks-rU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="일본(엔)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLS-AS-ddH">
+                                <rect key="frame" x="135" y="529" width="90" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZD-u5-ooz">
+                                <rect key="frame" x="135" y="700" width="165" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="64z-IN-AA4"/>
+                                    <constraint firstAttribute="width" constant="165" id="TXn-ue-hwS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중국(위안)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCs-5t-cV9">
+                                <rect key="frame" x="135" y="660" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="k40-3Y-SyT"/>
+                                    <constraint firstAttribute="height" constant="40" id="tYz-Rs-eqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="korea.png" translatesAutoresizingMaskIntoConstraints="NO" id="je8-tU-xSF">
+                                <rect key="frame" x="20" y="124" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fLi-e5-PCA"/>
+                                    <constraint firstAttribute="width" constant="100" id="yQ7-0l-cDs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usa.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRE-ta-u8e">
+                                <rect key="frame" x="20" y="259" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kuQ-UE-e3L"/>
+                                    <constraint firstAttribute="width" constant="100" id="uDc-7z-QFA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eu.png" translatesAutoresizingMaskIntoConstraints="NO" id="V8w-yf-Vcr">
+                                <rect key="frame" x="20" y="394" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jXX-Ut-KVt"/>
+                                    <constraint firstAttribute="width" constant="100" id="r7e-3M-SDW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japan.png" translatesAutoresizingMaskIntoConstraints="NO" id="Efs-VI-ltI">
+                                <rect key="frame" x="20" y="529" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="G2X-kt-XUD"/>
+                                    <constraint firstAttribute="height" constant="100" id="RcG-wn-IMj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="china.png" translatesAutoresizingMaskIntoConstraints="NO" id="ihR-g9-wJ1">
+                                <rect key="frame" x="20" y="664" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pBE-yS-8mB"/>
+                                    <constraint firstAttribute="height" constant="100" id="vIY-L7-bZv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnJ-fp-Mw1">
+                                <rect key="frame" x="129" y="793" width="156" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RqX-YT-mlL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="변환"/>
+                                <connections>
+                                    <action selector="wonTodollarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtO-bI-oLU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Efs-VI-ltI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Yy-uQ-wXD"/>
+                            <constraint firstItem="KZb-cd-5NG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="8bt-FN-Tje"/>
+                            <constraint firstItem="EOa-Z2-g29" firstAttribute="leading" secondItem="Efs-VI-ltI" secondAttribute="trailing" constant="15" id="8cT-Wf-H1n"/>
+                            <constraint firstItem="1ZD-u5-ooz" firstAttribute="leading" secondItem="ihR-g9-wJ1" secondAttribute="trailing" constant="15" id="EfH-uv-cpu"/>
+                            <constraint firstItem="je8-tU-xSF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="FvN-By-WF5"/>
+                            <constraint firstAttribute="bottom" secondItem="JnJ-fp-Mw1" secondAttribute="bottom" constant="53" id="GR4-tw-bps"/>
+                            <constraint firstItem="TRU-5s-OY4" firstAttribute="top" secondItem="NnV-ja-2fw" secondAttribute="bottom" id="HHN-Er-4I2"/>
+                            <constraint firstItem="lBS-iu-6x8" firstAttribute="leading" secondItem="WRE-ta-u8e" secondAttribute="trailing" constant="15" id="Ijg-jw-070"/>
+                            <constraint firstItem="V8w-yf-Vcr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JjY-lC-HOB"/>
+                            <constraint firstItem="V8w-yf-Vcr" firstAttribute="top" secondItem="WRE-ta-u8e" secondAttribute="bottom" constant="35" id="Mtp-O7-7rD"/>
+                            <constraint firstItem="Kz9-vE-jEJ" firstAttribute="top" secondItem="KZb-cd-5NG" secondAttribute="bottom" id="N5M-6e-bcN"/>
+                            <constraint firstItem="zCs-5t-cV9" firstAttribute="top" secondItem="EOa-Z2-g29" secondAttribute="bottom" constant="35" id="O8h-j9-Cky"/>
+                            <constraint firstItem="NnV-ja-2fw" firstAttribute="leading" secondItem="V8w-yf-Vcr" secondAttribute="trailing" constant="15" id="Q9z-nH-sf3"/>
+                            <constraint firstItem="Kz9-vE-jEJ" firstAttribute="leading" secondItem="je8-tU-xSF" secondAttribute="trailing" constant="15" id="QYK-9u-2py"/>
+                            <constraint firstItem="1ZD-u5-ooz" firstAttribute="top" secondItem="zCs-5t-cV9" secondAttribute="bottom" id="T8F-9f-dQd"/>
+                            <constraint firstItem="vsl-Q3-Sg0" firstAttribute="leading" secondItem="WRE-ta-u8e" secondAttribute="trailing" constant="15" id="Td2-KE-MDe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KZb-cd-5NG" secondAttribute="trailing" constant="193" id="W8A-xF-wE3"/>
+                            <constraint firstItem="NnV-ja-2fw" firstAttribute="top" secondItem="vsl-Q3-Sg0" secondAttribute="bottom" constant="35" id="WS9-BR-TRa"/>
+                            <constraint firstItem="TRU-5s-OY4" firstAttribute="leading" secondItem="V8w-yf-Vcr" secondAttribute="trailing" constant="15" id="XIv-RX-9TX"/>
+                            <constraint firstItem="TRU-5s-OY4" firstAttribute="top" secondItem="NnV-ja-2fw" secondAttribute="bottom" id="YjZ-xa-jFY"/>
+                            <constraint firstItem="TRU-5s-OY4" firstAttribute="leading" secondItem="V8w-yf-Vcr" secondAttribute="trailing" constant="15" id="aZD-bS-qtp"/>
+                            <constraint firstItem="Efs-VI-ltI" firstAttribute="top" secondItem="V8w-yf-Vcr" secondAttribute="bottom" constant="35" id="beh-do-OU1"/>
+                            <constraint firstItem="JnJ-fp-Mw1" firstAttribute="top" secondItem="1ZD-u5-ooz" secondAttribute="bottom" constant="33" id="bxp-eW-NXe"/>
+                            <constraint firstItem="zCs-5t-cV9" firstAttribute="leading" secondItem="ihR-g9-wJ1" secondAttribute="trailing" constant="15" id="bxs-Sm-4QH"/>
+                            <constraint firstItem="vsl-Q3-Sg0" firstAttribute="top" secondItem="lBS-iu-6x8" secondAttribute="bottom" id="cwg-Pv-TB7"/>
+                            <constraint firstItem="JnJ-fp-Mw1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="129" id="d0X-aN-H1E"/>
+                            <constraint firstAttribute="trailing" secondItem="lBS-iu-6x8" secondAttribute="trailing" constant="189" id="fct-RN-QOl"/>
+                            <constraint firstAttribute="trailing" secondItem="JnJ-fp-Mw1" secondAttribute="trailing" constant="129" id="gh5-pP-PWd"/>
+                            <constraint firstItem="lBS-iu-6x8" firstAttribute="top" secondItem="Kz9-vE-jEJ" secondAttribute="bottom" constant="35" id="h8q-Xj-n9U"/>
+                            <constraint firstItem="ihR-g9-wJ1" firstAttribute="top" secondItem="Efs-VI-ltI" secondAttribute="bottom" constant="35" id="mRJ-d0-Tx2"/>
+                            <constraint firstItem="WRE-ta-u8e" firstAttribute="top" secondItem="je8-tU-xSF" secondAttribute="bottom" constant="35" id="oXU-2t-vgQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kz9-vE-jEJ" secondAttribute="trailing" constant="114" id="tVE-ib-5Iw"/>
+                            <constraint firstItem="je8-tU-xSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uHp-iB-yqr"/>
+                            <constraint firstItem="WRE-ta-u8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xab-Vx-rNr"/>
+                            <constraint firstItem="ihR-g9-wJ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="y0m-Qs-P4S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dollarTextField" destination="vsl-Q3-Sg0" id="Wjf-TZ-j4h"/>
+                        <outlet property="euroTextField" destination="TRU-5s-OY4" id="aKG-aT-ubo"/>
+                        <outlet property="wonTextField" destination="Kz9-vE-jEJ" id="BlV-T2-fVf"/>
+                        <outlet property="yenTextField" destination="EOa-Z2-g29" id="cRI-9B-eWJ"/>
+                        <outlet property="yuanTextField" destination="1ZD-u5-ooz" id="t9H-P6-Gsh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="china.png" width="380" height="380"/>
+        <image name="eu.png" width="384" height="384"/>
+        <image name="japan.png" width="384" height="384"/>
+        <image name="korea.png" width="384" height="384"/>
+        <image name="usa.png" width="384" height="384"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
